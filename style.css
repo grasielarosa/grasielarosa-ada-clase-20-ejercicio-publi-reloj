@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    color: white;
+    letter-spacing: 10px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+li{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background-color:#D0B442;
+    color: #971618;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    transition-duration: 2s;
+    position: absolute;
+
+}
+
+.image {
+    background-image: url(/Assets/photo-1434056886845-dac89ffe9b56.jpg);
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    transition-duration: 2s;
+
+}
+
+.image:hover {
+    transition-duration: 2s;
+    transform: scale(1.2);
+}
+
+.cinta {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999999;
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+
+}
+
+.cinta2{
+    position: fixed;
+    left: 0px;
+    top: 320px;
+    z-index: 999999;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.container:hover .cinta2{
+    opacity: 0.8;
+    transition-duration: 0.8;
+}
